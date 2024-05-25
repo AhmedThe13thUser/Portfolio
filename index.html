@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Ahmed's Portfolio</title>
+  </head>
+  <body>
+
+
+    <div id="blob"></div>
+    <div id="blur"></div>
+    <Navbar/></Navbar>
+
+    <div id="nav-barrier" style="border: solid 20px rgba(130, 0, 0, 50)"></div>
+
+    <div id="con-body">
+      
+      <div id="home">
+        
+        <div
+          class="card text-bg-dark mb-3"
+          id="About-me-Card"
+          style="width: 18rem"
+        >
+          <div class="card-body">
+            <h5 class="card-title">About me</h5>
+            <p class="card-text">
+              Hello, I am Ahmed.<br /><InsertAge>I`ve been programming for over 5yrs.</InsertAge><br />I`ve
+              got some knowledge about Programming.<br />I love learning new
+              things.<br />I love working on new projects.
+            </p>
+          </div>
+        </div>
+
+        <br />
+        <h3 class="intro-paragraph">Here is what I know:</h3>
+        <div class="cards-container">
+          <div
+            class="grid-card card text-bg-dark mb-5"
+            style="max-width: 18rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">C#</h5>
+              <p class="card-text">
+                I have started learning C# around 2019.<br />
+                and I've used it consistently until 2021, but sometimes I might
+                pull it up to do some projects.
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid-card card text-bg-dark mb-5"
+            style="max-width: 18rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">JS</h5>
+              <p class="card-text">
+                I've started learning Js since 2020.<br />
+                And I'm still using it 'till this day.
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid-card card text-bg-dark mb-5"
+            style="max-width: 18rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">
+                I've started learning python since 2021.<br />
+                and I switched from using C# in 2021 to using python, it has
+                been my goto language since.
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid-card card text-bg-dark mb-5"
+            style="max-width: 18rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">C/C++</h5>
+              <p class="card-text">
+                I've started learning it since 2021, and I occasionally use it,
+                for projects that require speed.
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid-card card text-bg-dark mb-5"
+            style="max-width: 18rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Node.js</h5>
+              <p class="card-text">
+                I've started learning it around 2021.<br />
+                and I use it for (almost) everything, that needs a http server.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="divider Snd-div"></div>
+      </div>
+      
+      <div id="projects">
+        <div class="divider Fst-div"></div>
+        <h1 class="Projects-title" data-value="Here are some projects I've made:">Here are some projects I've made:</h1>
+        <div class="projects-container">
+          <div class="project">
+            <div class="card text-bg-dark">
+              <img src="./RPS/Thumbnail.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">RPS</h5>
+                <p class="card-text">One of the first websites I've made.<br/>Just the good old RPS.</p>
+                <a target="_blank" href="./RPS/index.html" class="btn btn-primary">Check it out!</a>
+              </div>
+            </div>
+          </div>
+          <div class="project">            <div class="card text-bg-dark">
+            <img src="./Rythmer/Thumbnail.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Word Rythmer</h5>
+              <p class="card-text">Input a word. and it would tell you what rhymes with it.</p>
+                <a target="_blank" href="./Rythmer/index.html" class="btn btn-primary">Check it out!</a>
+            </div>
+          </div></div>
+          <div class="project">            <div class="card text-bg-dark">
+            <img src="./Hangman/Thumbnail.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Hangman</h5>
+              <p class="card-text">Simple Hangman. who doesn't know it?</p>
+              <a href="./Hangman/index.html" class="btn btn-primary">Check it out!</a>
+            </div>
+          </div></div>
+        </div>
+      </div>
+
+      <div id="contacts">
+        <h6 id="copyright-mumbo-jumbo"></h6>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

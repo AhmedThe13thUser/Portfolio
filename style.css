@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/*
+! so if you are typing in a heading use 48px font-size and line height 1.2x and letter spacing use -1% to -2%
+! use centered text for small paragraphs in headers and in headers in general
+
+!rule of thumb:
+! 1. if text is bigger than 3 lines use left aligned if smaller use center aligned
+
+
+! and if body use 18px and line height use 1.5x
+! 600 px for paragraph width (word width)
+! use subtle color change and font weight to make a hereichy
+
+
+
+
+todo: if things have a closer realaetion with each other make the spacing half the less related things
+*/
+
+* {
+  z-index: 3;
+  /* font-family: "PT Sans", sans-serif; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  /* color: #f1f1f1; */
+
+  /*
+  * overriding colors
+  */
+  --bs-navbar-active-color: #d1d1d1 !important;
+  --bs-nav-link-color: #eeeeee !important;
+  --bs-nav-link-hover-color: #cccccc !important;
+  font-size: large;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #202731;
+  color: whitesmoke;
+
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Space Mono", monospace;
+  font-size: clamp(0.8rem, 3vw, 3rem);
+  width: fit-content;
+  margin-left: 10px;
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0 10px 0 10px;
+}
+
+#About-me-Card {
+  margin: auto;
+}
+
+nav {
+  max-width: 100vw;
+}
+
+/*?Projects div */
+
+.Projects-title, .intro-paragraph{
+  padding: 0 20px;
+}
+
+.projects-container {
+  display: grid;
+  width: 100vw;
+  padding: 0 20px;
+  grid-template-columns: auto;
+}
+
+.projects-container > div {
+  width: 18rem;
+}
+
+/*?Curves*/
+
+#home,
+#projects,
+#contacts {
+  position: relative;
+}
+.contacts-card {
+  width: 23vw !important;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  * {
+    z-index: 3;
+    /* font-family: "PT Sans", sans-serif; */
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    /* color: #f1f1f1; */
+  
+    /*
+    * overriding colors
+    */
+    --bs-navbar-active-color: #d1d1d1 !important;
+    --bs-nav-link-color: #eeeeee !important;
+    --bs-nav-link-hover-color: #cccccc !important;
+    font-size: large;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: #202731;
+    color: whitesmoke;
+  
+    height: 100vh;
+    margin: 0rem;
+  }
+  
+  h1 {
+    font-family: "Space Mono", monospace;
+    font-size: clamp(0.8rem, 3vw, 3rem);
+    width: fit-content;
+    margin-left: 10px;
+  }
+  
+  #con-body {
+    /*! Edited in js */
+    padding: 5px;
+  }
+  
+  /* .cards-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  } */
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3px;
+    padding: 10px;
+  }
+  
+  #About-me-Card {
+    margin: auto;
+  }
+  
+  /*?Projects div */
+  
+  .projects-container {
+    display: grid;
+    width: 100%;
+    margin: 20px;
+    padding: 20px 40px 20px 20px;
+    gap: 10px;
+    grid-template-columns: auto;
+  }
+  
+  .projects-container > div {
+    width: 18rem;
+  }
+  
+  /*?Curves*/
+  
+  #home,
+  #projects,
+  #contacts {
+    position: relative;
+  }
+  
+  .contacts-card {
+    width: 23vw !important;
+  }
+  
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+  
+    50% {
+      scale: 1 1.5;
+    }
+  
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  #blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+    z-index: 0;
+  }
+  
+  #blur {
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(12vmax);
+  }
+  
+  
+  } /*laptop*/
+@media only screen and (min-width: 768px) {
+  
+* {
+  z-index: 3;
+  /* font-family: "PT Sans", sans-serif; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  /* color: #f1f1f1; */
+
+  /*
+  * overriding colors
+  */
+  --bs-navbar-active-color: #d1d1d1 !important;
+  --bs-nav-link-color: #eeeeee !important;
+  --bs-nav-link-hover-color: #cccccc !important;
+  font-size: large;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #202731;
+  color: whitesmoke;
+
+  height: 100vh;
+  margin: 0rem;
+}
+
+h1 {
+  font-family: "Space Mono", monospace;
+  font-size: clamp(0.8rem, 3vw, 3rem);
+  width: fit-content;
+  margin-left: 10px;
+}
+
+#con-body {
+  /*! Edited in js */
+  padding: 5px;
+}
+
+/* .cards-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+} */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3px;
+  padding: 10px;
+}
+
+#About-me-Card {
+  margin: auto;
+}
+
+/*?Projects div */
+
+.projects-container {
+  display: grid;
+  width: 100%;
+  margin: 20px;
+  padding: 20px 40px 20px 20px;
+  gap: 10px;
+  grid-template-columns: auto auto;
+}
+
+.projects-container > div {
+  width: 18rem;
+}
+
+/*?Curves*/
+
+#home,
+#projects,
+#contacts {
+  position: relative;
+}
+
+.contacts-card {
+  width: 23vw !important;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  /* position: absolute; */
+  position: fixed;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+}
+
+
+} /*laptop*/

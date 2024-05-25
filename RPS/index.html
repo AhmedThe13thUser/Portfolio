@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bf7e544a01.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>RPS GAME</title>
+  </head>
+  <body>
+<div class="container">
+  <h1>Weclome to Rock, Paper, Scissors.</h1>
+  <div>
+    <button onclick="Pick(Picks.Rock)">
+      <i class="fa fa-hand-rock" aria-hidden="true" /></i>
+      Rock
+    </button>
+    <button onclick="Pick(Picks.Paper)">
+      <i class="fa fa-hand-paper" aria-hidden="true" /></i>
+      Paper
+    </button>
+    <button onclick="Pick(Picks.Scissors)">
+      <i class="fa fa-hand-scissors" aria-hidden="true"></i>
+      Scissors
+    </button>
+
+    <button onclick="Reset()">RESET</button>
+  </div>
+  <div>
+    <h1 class="You-chose">You Chose: </h1>
+    <h1 class="AI-chose">AI Chose: </h1>
+    <h1 class="Your-score">Your Score: </h1>
+    <h1 class="Ties">Ties: </h1>
+    <h1 class="AI-score">AI Score: </h1>
+  </div>
+  </div>
+  </body>
+</html>
